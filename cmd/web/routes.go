@@ -5,6 +5,8 @@ import "net/http"
 func (app *application) routes() *http.ServeMux {
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", app.home)
+	mux.HandleFunc("/blog", app.showBlog)
+	mux.HandleFunc("/newBlog", app.newBlog)
 
 	fileServer := http.FileServer(http.Dir("./ui/static"))
 	mux.Handle("/static/", http.StripPrefix("/static", fileServer))

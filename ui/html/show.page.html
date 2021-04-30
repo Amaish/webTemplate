@@ -1,0 +1,16 @@
+{{template "base" .}}
+{{define "title"}}blog #{{.ID}}{{end}}
+{{define "body"}}
+    <div class="blog">
+        <div class="metadata">
+            <strong>{{.Title}}</strong>
+            <span class="pull-right">#{{.ID}}</span>
+        </div>
+        <pre><code>{{.Content}}</code></pre>
+        <div class="metadata">
+            <time>Created: {{.Created}}</time>
+            <time>Expires: {{.Expires}}</time>
+            <span class="pull-right">- By {{.Author}}</span>
+        </div>
+    </div>
+{{end}}
