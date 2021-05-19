@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"os"
 
+	"github.com/Amaish/webTemplate/pkg/models/mysql"
 	_ "github.com/go-sql-driver/mysql"
-	"gitlab.com/amaish/webTemplate/pkg/models/mysql"
 )
 
 type application struct {

@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"gitlab.com/Amaish/webTemplate/pkg/models"
+	"github.com/Amaish/webTemplate/pkg/models"
 )
 
 func (app *application) home(w http.ResponseWriter, r *http.Request) {

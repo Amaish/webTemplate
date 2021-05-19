@@ -3,7 +3,7 @@ package mysql
 import (
 	"database/sql"
 
-	"gitlab.com/Amaish/webTemplate/pkg/models"
+	"github.com/Amaish/webTemplate/pkg/models"
 )
 
 type BlogModel struct {
